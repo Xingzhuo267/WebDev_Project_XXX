@@ -9,51 +9,73 @@
         <header>
             <nav>
                 <a href="index.html">home</a>
+                <span>|</span>
                 <a href="about.html">about</a>
             </nav>
         </header>
         
-        <div>
-            <h1>Welcome to Anime Haven</h1>
-            <img src="sebastian-kurpiel-R7qWs39obtk-unsplash.jpg" alt="akihabara" width="100%" height="250px" style="object-fit: cover;">
-            <div id="search_bar">
-                <input type="search" placeholder="Search...">
-                <button id="search_button"">search</button>
-            </div>
+        <main>
+            <section>
+                <h1>Welcome to Anime Haven</h1>
 
-            <div id="Todays_Recommendaton">
-                <h3>Today's Recommendation</h3>
-                <table>
-                    <tr>
-                        <td>
-                            <img src="qiaominxu_qiao-ming-xu-a-woman-8878127_1920.jpg" alt="Anime1_pic" width="200px" height="150px">
-                            <p>Anime1</p>
-                        </td>
-                        <td>
-                            <img src="qiaominxu_qiao-ming-xu-a-woman-8878159_1920.jpg" alt="Anime2_pic" width="200px" height="150px">
-                            <p>Anime2</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="qiaominxu_qiao-ming-xu-ai-generated-8750161.jpg" alt="Anime3_pic" width="200px" height="150px">
-                            <p>Anime3</p>
-                        </td>
-                        <td>
-                            <img src="qiaominxu_qiao-ming-xu-ai-generated-9362642.png" alt="Anime4_pic" width="200px" height="150px">
-                            <p>Anime4</p>
-                        </td>
-                    </tr>
-                </table>
-                <p>page 1/...</p>
-                <button id="prev_page">prev</button>
-                <button id="next_page">next</button>
-            </div>
-        </div>
+                <img src="sebastian-kurpiel-R7qWs39obtk-unsplash.jpg" alt="akihabara" width="100%" height="250px" style="object-fit: cover;">
+                
+                <form>
+                    <label for="site-search">Search</label>
+                    <input type="search" placeholder="Search...">
+                    <button id="search_button" type="submit">search</button>
+                </form>
+            </section>
+
+            <section>
+                <h2>Today's Recommendation</h2>
+                
+                <ul>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <img src="qiaominxu_qiao-ming-xu-a-woman-8878127_1920.jpg" alt="Anime1_pic" width="200px" height="150px">
+                                <h3>Anime1</h3>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <img src="qiaominxu_qiao-ming-xu-a-woman-8878159_1920.jpg" alt="Anime2_pic" width="200px" height="150px">
+                                <h3>Anime2</h3>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <img src="qiaominxu_qiao-ming-xu-ai-generated-8750161.jpg" alt="Anime3_pic" width="200px" height="150px">
+                                <h3>Anime3</h3>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="">
+                                <img src="qiaominxu_qiao-ming-xu-ai-generated-9362642.png" alt="Anime4_pic" width="200px" height="150px">
+                                <h3>Anime4</h3>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <nav>
+                    <button type="button">prev</button>
+                    <span>page 1/...</span>
+                    <button type="button">next</button>
+                </nav>
+            </section>
+
+        </main>
 
         <footer>
             <a href="#">contact us</a>
         </footer>
-
     </body>
 </html>
