@@ -1,24 +1,88 @@
-body {
-    background-color: #ffedcb;
-    color: #4b3529;
+/*Home Page*/
+body.home{
+    background-color: #e8f0e0;
+    color: #2f3b2a;
+    font-family: "Inter";
 }
 
-header {
-    background-color: #f5d7b3;
+.home nav a{
+    color: #c96f4a;
+    text-decoration: none;
+    font-family: "Poppins";
 }
 
-nav a {
-    background-color: #ffe9d2;
-    color: #8a3b1e;
-}
-
-nav a:hover {
-    background-color: #8a3b1e;
+.home nav a:hover{
+    background-color: #c96f4a;
     color: #ffffff;
 }
 
-h1 {
+.home h1{
+    color: #5c7a44;
     text-align: center;
-    color: #b3472f;
+    font-family: "Poppins";
 }
 
+.home button{
+    background-color: #7a9b5e;
+    color: #ffffff;
+    font-family: "Poppins";
+}
+
+.home button:hover{
+    background-color: #5c7a44;
+}
+
+.today-recommendation a{
+    color: #5c7a44;
+    text-decoration: none;
+}
+
+.today-recommendation a:hover h3{
+    background-color: #5c7a44;
+    color: #ffffff;
+}
+
+.today-recommendation img{
+    width: 160px;
+    height: 120px;
+}
+
+.home footer a{
+    color: #c96f4a;
+    font-family: "Poppins";
+}
+
+/* About Page*/
+body.about{
+    background-color: #e6f0f7;
+    color: #1f3a4a;
+    font-family: "Nunito";
+}
+
+.about h1{
+    color: #2f6f9e;
+    text-align: center;
+    font-family: "Quicksand";
+}
+
+.about h2{
+    color: #4a8ac5;
+    font-family: "Quicksand";
+}
+
+.about nav a{
+    color: #7a4a9e;
+    text-decoration: none;
+    font-family: "Quicksand";
+}
+
+.about nav a:hover{
+    background-color: #7a4a9e;
+    color: #ffffff;
+
+}
+
+.about footer a{
+    color: #7a4a9e;
+    text-decoration: underline;
+}
