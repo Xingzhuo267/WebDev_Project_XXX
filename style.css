@@ -1,11 +1,24 @@
 body {
-    background-color: blanchedalmond;
+    background-color: #ffedcb;
+    color: #4b3529;
+}
+
+header {
+    background-color: #f5d7b3;
+}
+
+nav a {
+    background-color: #ffe9d2;
+    color: #8a3b1e;
+}
+
+nav a:hover {
+    background-color: #8a3b1e;
+    color: #ffffff;
 }
 
 h1 {
     text-align: center;
+    color: #b3472f;
 }
 
-#Todays_Recommendaton {
-    margin: 50px 0px;
-}
