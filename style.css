@@ -1,88 +1,130 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /*Home Page*/
-body.home{
-    background-color: #e8f0e0;
-    color: #2f3b2a;
+body.home {
+    background-color: #101A14;
+    color: #edf4ea;
     font-family: "Inter";
 }
 
-.home nav a{
-    color: #c96f4a;
+.home nav a {
+    color: #bdceb9;
     text-decoration: none;
     font-family: "Poppins";
 }
 
-.home nav a:hover{
-    background-color: #c96f4a;
+.home nav a:hover {
+    background-color: #bdceb9;
     color: #ffffff;
 }
 
-.home h1{
-    color: #5c7a44;
+.home .hero {
+    background-image: url('hero_image.png');
+    background-size: cover;
+}
+
+.home .hero h1 {
+    color: #edf4ea;
     text-align: center;
     font-family: "Poppins";
 }
 
-.home button{
-    background-color: #7a9b5e;
+.home .hero h2 {
+    color: #acd28b;
+    text-align: center;
+    font-family: "Poppins";
+}
+
+.home .hero h3 {
+    color: #bdceb9;
+    text-align: center;
+    font-family: "Poppins";
+}
+
+.home .hero a {
+    color: #acd28b;
+}
+
+.home .recommendation {
+    padding: 24px;
+    margin: 24 auto;
+    border: 1px solid #c7d6bb;
+    border-radius: 12px;
+}
+
+.home .recommendation ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.home .recommendation a {
+    color: #edf4ea;
+    text-decoration: none;
+}
+
+.home .recommendation img {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.home .page {
+    text-align: center;
+}
+
+.home button {
+    background-color: #acd28b;
     color: #ffffff;
     font-family: "Poppins";
 }
 
-.home button:hover{
-    background-color: #5c7a44;
+.home button:hover {
+    background-color: #637952;
 }
 
-.today-recommendation a{
-    color: #5c7a44;
+.home footer {
+    text-align: center;
+}
+
+.home footer a {
+    color: #bdceb9;
     text-decoration: none;
-}
-
-.today-recommendation a:hover h3{
-    background-color: #5c7a44;
-    color: #ffffff;
-}
-
-.today-recommendation img{
-    width: 160px;
-    height: 120px;
-}
-
-.home footer a{
-    color: #c96f4a;
     font-family: "Poppins";
 }
 
 /* About Page*/
-body.about{
+body.about {
     background-color: #e6f0f7;
     color: #1f3a4a;
     font-family: "Nunito";
 }
 
-.about h1{
+.about h1 {
     color: #2f6f9e;
     text-align: center;
     font-family: "Quicksand";
 }
 
-.about h2{
+.about h2 {
     color: #4a8ac5;
     font-family: "Quicksand";
 }
 
-.about nav a{
+.about nav a {
     color: #7a4a9e;
     text-decoration: none;
     font-family: "Quicksand";
 }
 
-.about nav a:hover{
+.about nav a:hover {
     background-color: #7a4a9e;
     color: #ffffff;
 
 }
 
-.about footer a{
+.about footer a {
     color: #7a4a9e;
-    text-decoration: underline;
+    text-decoration: none;
 }
