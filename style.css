@@ -4,22 +4,45 @@
 
 /*Home Page*/
 body.home {
-    width: min(100% - 2rem, 1200px);
-    margin: auto;
+    margin: 0;
     background-color: #101A14;
     color: #edf4ea;
     font-family: "Inter";
 }
 
+.container {
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+}
+
+.home header {
+    border: 2px solid #3a5540;
+    border-radius: 12px 12px 0 0;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
 .home header nav {
     display: flex;
-    align-items: 70% center;
+    position: relative;
+    align-items: center;
     gap: 2rem;
-    border-bottom: 4px solid #3a5540;
+    min-height: 4rem;
+    padding: 0 2rem;
+}
+
+.home header nav::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    right: 2rem;
+    height: 2px;
+    background-color: #3a5540;
 }
 
 .home header p {
-    margin-right: auto;
+    margin: 0 auto 0 0;
 }
 
 .home header a {
@@ -30,48 +53,48 @@ body.home {
 
 .home nav a:hover {
     background-color: #bdceb9;
-    color: #ffffff;
+    color: #101A14;
 }
 
 .hero {
     min-height: clamp(560px, 70vh, 760px);
     padding: 2rem 4rem;
-    margin: 2rem auto;
-    border: 4px solid #3a5540;
-    border-radius: 12px;
-    background-image: url('hero_background_image.png');
-    background-position: 10% center;
+    margin: 0 auto 2rem;
+    border: 2px solid #3a5540;
+    border-radius: 0 0 12px 12px;
+    border-top: none;
+    background-image: linear-gradient(to right, #101a14 0%, rgba(16,26,20,0.95) 30%, rgba(16,26,20,0.5) 65%, rgba(16,26,20,0.1) 100%), url('hero_background_image.png');
+    background-position: 70% center;
     background-size: cover;
 }
 
-.hero-titel {
+.hero-title {
     font-size: clamp(3rem, 6vw, 5.5rem);
     line-height: 1.05;
+    font-family: "Poppins";
 }
 
 .title-main {
     color: #edf4ea;
     text-align: left;
-    font-family: "Poppins";
 }
 
 .title-accent {
     color: #acd28b;
     display: block;
     text-align: left;
-    font-family: "Poppins";
 }
 
 .hero p {
     max-width: 36rem;
     font-size: 1rem;
     line-height: 1.6;
+    font-family: "Poppins";
 }
 
  .description {
     color: #bdceb9;
     text-align: left;
-    font-family: "Poppins";
 }
 
 .hero a {
@@ -79,10 +102,9 @@ body.home {
 }
 
 .recommendation {
-    min-height: clamp(560px, 70vh, 760px);
     padding: 2rem 4rem;
     margin: 2rem auto;
-    border: 4px solid #3a5540;
+    border: 2px solid #3a5540;
     border-radius: 12px;
 }
 
@@ -90,18 +112,16 @@ body.home {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: repeat(2, minmax(0, 1fr));
-    gap: 1.5rem
-}
-
-.recommendation li {
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 .recommendation li>div {
     padding: 1rem;
-    border: 1px solid #3e5a46;
     border-radius: 12px;
-    background-color: #55745b;
+    background-color: #223326;
 }
 
 .recommendation a {
@@ -122,12 +142,13 @@ body.home {
 }
 
 .page {
+    margin: 2rem auto 0;
     text-align: center;
 }
 
 .home button {
     background-color: #acd28b;
-    color: #ffffff;
+    color: #101A14;
     font-family: "Poppins";
 }
 
@@ -147,7 +168,7 @@ body.home {
 
 .home footer a:hover {
     background-color: #bdceb9;
-    color: #ffffff;
+    color: #101A14;
 }
 
 /* About Page*/
